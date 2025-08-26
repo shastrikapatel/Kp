@@ -6,8 +6,11 @@ const session = require("express-session");
 
 const app = express();
 
-// MongoDB connection
-mongoose.connect(process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/priceListDB");
+// Connect MongoDB
+mongoose.connect("mongodb://127.0.0.1:27017/priceListDB", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -31,5 +34,4 @@ app.use("/customer", customerRoutes);
 // Redirect root to login
 app.get("/", (req, res) => res.redirect("/admin/login"));
 
-// Export app for Vercel
-module.exports = app;
+app.listen(3000, () => console.log("Server running on http://localhost:3000"));
