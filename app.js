@@ -9,7 +9,7 @@ const app = express();
 // Connect MongoDB
 // ... existing code ...
 // Replace with your MongoDB Atlas connection string
-mongoose.connect(process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/priceListDB", {
+mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
