@@ -7,10 +7,13 @@ const session = require("express-session");
 const app = express();
 
 // Connect MongoDB
-mongoose.connect("mongodb://127.0.0.1:27017/priceListDB", {
+// ... existing code ...
+// Replace with your MongoDB Atlas connection string
+mongoose.connect(process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/priceListDB", {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
+// ... existing code ...
 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
