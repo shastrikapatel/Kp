@@ -30,6 +30,10 @@ const customerRoutes = require("../routes/customer");
 
 app.use("/admin", adminRoutes);
 app.use("/customer", customerRoutes);
+app.get("/test", (req, res) => {
+    res.send("Express is working!");
+});
+
 
 // Redirect root to login
 app.get("/", (req, res) => res.redirect("/admin/login"));
