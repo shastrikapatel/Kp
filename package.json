@@ -1,12 +1,14 @@
 {
+  "name": "price-list-app",
+  "version": "1.0.0",
+  "main": "api/index.js",
+  "scripts": {
+    "start": "node api/index.js"
+  },
   "dependencies": {
-    "body-parser": "^2.2.0",
-    "ejs": "^3.1.10",
-    "express": "^5.1.0",
-    "express-session": "^1.18.2",
-    "mongoose": "^8.18.0"
-  },"scripts": {
-  "start": "node api/index.js"
-}
-
+    "express": "^4.18.2",
+    "mongoose": "^7.0.0",
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9"
+  }
 }
