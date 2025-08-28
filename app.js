@@ -18,7 +18,7 @@ async function connectDB() {
     await mongoose.connect(process.env.MONGO_URL, {
         useNewUrlParser: true,
         useUnifiedTopology: true
-    });
+    }); 
     isConnected = true;
 }
 

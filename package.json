@@ -15,14 +15,14 @@
   "description": "",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shastrikapatel/kp.git"
+    "url": "git+https://github.com/shastrikapatel/test.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/shastrikapatel/kp/issues"
+    "url": "https://github.com/shastrikapatel/test/issues"
   },
-  "homepage": "https://github.com/shastrikapatel/kp#readme"
+  "homepage": "https://github.com/shastrikapatel/test#readme"
 }
